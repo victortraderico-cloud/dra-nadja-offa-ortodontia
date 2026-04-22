@@ -86,8 +86,8 @@ const Hero = () => {
           <div className="relative lg:ml-auto">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/11dtkq6a_WhatsApp%20Image%202026-04-14%20at%2010.42.59.jpeg"
-                alt="Dra. Nadja Offa"
+                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/egsq4t18_ChatGPT%20Image%2022%20de%20abr.%20de%202026%2C%2012_58_29.png"
+                alt="Dra. Nadja Offa com paciente"
                 className="w-full h-[600px] object-cover"
               />
             </div>
@@ -95,7 +95,7 @@ const Hero = () => {
             {/* Floating badge */}
             <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-4 shadow-xl border border-[#D5DEEF]/50">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#395886]">10+</div>
+                <div className="text-3xl font-bold text-[#395886]">30+</div>
                 <div className="text-xs text-gray-600 mt-1">Anos de<br/>Experiência</div>
               </div>
             </div>

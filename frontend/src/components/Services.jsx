@@ -1,5 +1,5 @@
 import React from 'react';
-import { Smile, Sparkles, Activity, LineChart, CheckCircle2, Star, Heart, Scan, Shield } from 'lucide-react';
+import { Smile, Sparkles, Activity, LineChart, CheckCircle2, Star, Scan, Shield } from 'lucide-react';
 import { Button } from './ui/button';
 import { services } from '../data/mock';
 
@@ -10,7 +10,6 @@ const iconMap = {
   LineChart,
   CheckCircle2,
   Star,
-  Heart,
   Scan,
   Shield
 };
@@ -53,9 +52,18 @@ const Services = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#395886] transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mb-6">
                   {service.description}
                 </p>
+
+                {/* WhatsApp Button */}
+                <Button
+                  onClick={() => window.open(`https://wa.me/5511997203335?text=Olá! Gostaria de saber mais sobre ${service.title}.`, '_blank')}
+                  variant="outline"
+                  className="w-full border-[#395886] text-[#395886] hover:bg-[#395886] hover:text-white transition-all duration-300"
+                >
+                  Saber Mais
+                </Button>
 
                 {/* Decorative gradient on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F0F3FA]/0 to-[#D5DEEF]/0 group-hover:from-[#F0F3FA]/10 group-hover:to-[#D5DEEF]/10 rounded-2xl transition-all duration-300 pointer-events-none"></div>

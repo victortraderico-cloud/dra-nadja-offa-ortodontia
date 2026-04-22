@@ -92,29 +92,41 @@ const FixedBraces = () => {
 
           {/* Image Side */}
           <div className="relative order-1 lg:order-2">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/gtsyieev_655167334_18110998492687860_2576208548805245955_n%20%281%29.jpg"
-                alt="Tipos de aparelhos ortodônticos"
-                className="w-full h-[500px] object-contain bg-gradient-to-br from-[#F0F3FA] to-[#D5DEEF]"
-              />
-              
-              {/* Floating badge */}
-              <div className="absolute top-8 right-8 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl">
-                <div className="flex items-center gap-3">
-                  <Shield className="w-8 h-8 text-[#395886]" />
-                  <div>
-                    <div className="text-sm font-semibold text-gray-900">Qualidade</div>
-                    <div className="text-xs text-gray-600">Garantida</div>
+            {/* Clean Professional Braces Display */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-white to-[#F0F3FA] p-12">
+              <div className="grid grid-cols-2 gap-8">
+                {/* Metálico Tradicional */}
+                <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#8AAEE0] to-[#638ECB] rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <Shield className="w-10 h-10 text-white" />
                   </div>
+                  <h4 className="font-bold text-gray-900 text-sm">Metálico<br/>Tradicional</h4>
+                </div>
+
+                {/* Autoligado */}
+                <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#B1C9EF] to-[#8AAEE0] rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <Zap className="w-10 h-10 text-white" />
+                  </div>
+                  <h4 className="font-bold text-gray-900 text-sm">Metálico<br/>Autoligado</h4>
+                </div>
+
+                {/* Estético Cerâmico */}
+                <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#D5DEEF] to-[#B1C9EF] rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <Award className="w-10 h-10 text-white" />
+                  </div>
+                  <h4 className="font-bold text-gray-900 text-sm">Estético<br/>Cerâmico</h4>
+                </div>
+
+                {/* Estético Safira */}
+                <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#F0F3FA] to-[#D5DEEF] rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <Clock className="w-10 h-10 text-[#395886]" />
+                  </div>
+                  <h4 className="font-bold text-gray-900 text-sm">Estético<br/>de Safira</h4>
                 </div>
               </div>
-            </div>
-            
-            {/* Image decoration */}
-            <div className="absolute bottom-8 left-8 bg-gradient-to-r from-[#395886] to-[#638ECB] rounded-2xl p-6 shadow-xl text-white max-w-xs">
-              <p className="font-semibold mb-1">Transformação Completa</p>
-              <p className="text-sm text-white/90">Aparelhos de última geração para resultados incríveis</p>
             </div>
           </div>
         </div>

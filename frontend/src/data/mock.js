@@ -30,7 +30,7 @@ export const services = [
   },
   {
     id: 3,
-    title: "Ortopedia Funcional Pediátrica",
+    title: "Ortopedia Funcional dos Maxilares",
     description: "Correção de problemas de crescimento dos maxilares em crianças de 5 a 12 anos.",
     icon: "Activity"
   },
@@ -54,18 +54,12 @@ export const services = [
   },
   {
     id: 7,
-    title: "Odontopediatria",
-    description: "Limpeza, adaptação e prevenção para crianças em ambiente acolhedor.",
-    icon: "Heart"
-  },
-  {
-    id: 8,
     title: "Escaneamento Digital",
     description: "Moldagem digital 3D, sem uso de moldeiras tradicionais desconfortáveis.",
     icon: "Scan"
   },
   {
-    id: 9,
+    id: 8,
     title: "Tratamento de Bruxismo",
     description: "Tratamento especializado para bruxismo infantil e proteção dental.",
     icon: "Shield"

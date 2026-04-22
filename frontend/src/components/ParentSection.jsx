@@ -113,7 +113,7 @@ const ParentSection = () => {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/1ot54px4_download%20%2813%29.png"
+                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/egsq4t18_ChatGPT%20Image%2022%20de%20abr.%20de%202026%2C%2012_58_29.png"
                 alt="Dra. Nadja Offa com paciente infantil"
                 className="w-full h-[600px] object-cover"
               />
