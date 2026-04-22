@@ -1,135 +1,108 @@
 import React from 'react';
-import { AlertCircle, Utensils, MessageCircle, Zap, Palette } from 'lucide-react';
+import { Smile, Palette, Trophy, Users } from 'lucide-react';
 import { Button } from './ui/button';
-import { parentConcerns } from '../data/mock';
-
-const iconMap = {
-  AlertCircle,
-  Utensils,
-  MessageCircle,
-  Zap
-};
 
 const ParentSection = () => {
+  const benefits = [
+    {
+      icon: Smile,
+      title: "Atendimento Especializado",
+      description: "Ambiente acolhedor e técnicas gentis para crianças com medo de dentista"
+    },
+    {
+      icon: Palette,
+      title: "Aparelhos Personalizados",
+      description: "Com nome da criança, desenhos favoritos e times de futebol"
+    },
+    {
+      icon: Trophy,
+      title: "Motivação Constante",
+      description: "Sistema de recompensas que torna o tratamento divertido"
+    },
+    {
+      icon: Users,
+      title: "Suporte aos Pais",
+      description: "Orientação completa para acompanhamento em casa"
+    }
+  ];
+
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-[#B1C9EF]/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-0 w-96 h-96 bg-[#638ECB]/10 rounded-full blur-3xl"></div>
+    <section className="py-24 bg-gradient-to-br from-[#F0F3FA] via-white to-[#D5DEEF]/30 relative overflow-hidden">
+      {/* Decorative shapes */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#B1C9EF]/20 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#8AAEE0]/20 to-transparent rounded-full blur-3xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content Side */}
           <div className="space-y-8">
             <div>
-              <div className="inline-block bg-[#F0F3FA] text-[#395886] rounded-full px-4 py-2 text-sm font-semibold mb-4">
+              <div className="inline-block bg-gradient-to-r from-[#B1C9EF] to-[#8AAEE0] text-white rounded-full px-4 py-2 text-sm font-semibold mb-4">
                 Para Pais e Responsáveis
               </div>
               <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                Seu filho merece o melhor cuidado ortodôntico
+                Ortodontia{' '}
+                <span className="bg-gradient-to-r from-[#395886] to-[#638ECB] bg-clip-text text-transparent">
+                  Infantil
+                </span>
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Entendemos suas preocupações. Como especialista em ortodontia infantil, 
-                oferecemos soluções personalizadas para os desafios mais comuns enfrentados 
-                pelas famílias.
+                Cuidado especializado e acolhedor para crianças de 5 a 12 anos, 
+                com aparelhos personalizados que tornam o tratamento mais divertido.
               </p>
             </div>
 
-            {/* Concerns Grid */}
+            {/* Benefits Grid */}
             <div className="grid sm:grid-cols-2 gap-6">
-              {parentConcerns.map((concern) => {
-                const IconComponent = iconMap[concern.icon];
+              {benefits.map((benefit, index) => {
+                const IconComponent = benefit.icon;
                 return (
-                  <div 
-                    key={concern.id}
-                    className="bg-gradient-to-br from-[#F0F3FA]/40 to-white p-6 rounded-2xl border border-[#D5DEEF]/50 hover:shadow-lg transition-shadow duration-300"
-                  >
-                    <IconComponent className="w-10 h-10 text-[#395886] mb-4" />
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      {concern.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {concern.description}
-                    </p>
+                  <div key={index} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow border border-[#D5DEEF]/50">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#F0F3FA] to-[#D5DEEF] rounded-xl flex items-center justify-center mb-4">
+                      <IconComponent className="w-6 h-6 text-[#395886]" />
+                    </div>
+                    <h3 className="font-bold text-gray-900 mb-2">{benefit.title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">{benefit.description}</p>
                   </div>
                 );
               })}
             </div>
 
-            {/* Aparelhos Personalizados */}
-            <div className="bg-gradient-to-br from-[#F0F3FA] to-[#D5DEEF]/30 rounded-2xl p-8 border border-[#B1C9EF]/50">
-              <div className="flex items-start gap-4 mb-4">
-                <Palette className="w-8 h-8 text-[#395886] flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
-                    Aparelhos Personalizados para Crianças
-                  </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    Tornamos o tratamento ortodôntico mais divertido e especial para as crianças com opções de personalização:
-                  </p>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#638ECB] rounded-full"></span>
-                      <span>Aparelhos com <strong>nome da criança</strong></span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#638ECB] rounded-full"></span>
-                      <span>Decorados com <strong>desenhos favoritos</strong></span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-[#638ECB] rounded-full"></span>
-                      <span>Temas de <strong>times de futebol</strong></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img 
-                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/8r1uc0sz_2025-07-03.webp"
-                alt="Aparelhos personalizados"
-                className="w-full h-48 object-contain rounded-xl mt-4"
-              />
-            </div>
-
-            {/* Reassurance Box */}
+            {/* CTA Section */}
             <div className="bg-gradient-to-r from-[#395886] to-[#638ECB] rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">
-                Atendimento Especializado para Crianças com Medo
+                Seu filho merece o melhor cuidado ortodôntico
               </h3>
               <p className="mb-6 text-white/90 leading-relaxed">
-                Utilizamos técnicas de adaptação gradual, ambiente acolhedor e uma 
-                abordagem gentil e paciente. A primeira consulta é focada em criar 
-                confiança e deixar a criança confortável.
+                Agende uma avaliação e descubra como podemos ajudar seu filho 
+                a ter um sorriso saudável e bonito. Primeira consulta sem compromisso!
               </p>
               <Button 
-                onClick={() => window.open("https://wa.me/5511997203335?text=Olá! Meu filho tem medo de dentista. Como funciona o atendimento?", '_blank')}
-                className="bg-white text-[#395886] hover:bg-gray-50 rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
+                onClick={() => window.open("https://wa.me/5511997203335?text=Olá! Gostaria de saber mais sobre ortodontia infantil.", '_blank')}
+                className="bg-white text-[#395886] hover:bg-gray-50 rounded-full px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Saiba Como Ajudamos Seu Filho
+                Quero Saber Mais
               </Button>
             </div>
           </div>
 
           {/* Image Side */}
-          <div className="relative">
+          <div className="relative order-first lg:order-last">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/egsq4t18_ChatGPT%20Image%2022%20de%20abr.%20de%202026%2C%2012_58_29.png"
-                alt="Dra. Nadja Offa com paciente infantil"
+                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/xzeoms4s_ChatGPT%20Image%2022%20de%20abr.%20de%202026%2C%2012_58_29.png"
+                alt="Ortodontia Infantil - Dra. Nadja Offa"
                 className="w-full h-[600px] object-cover"
               />
-              
-              {/* Glassmorphism overlay card - MOVIDO DA SEÇÃO HERO */}
-              <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/50">
-                <p className="text-gray-900 font-semibold text-lg mb-2">
-                  Atendimento especializado para crianças
-                </p>
-                <p className="text-gray-600 text-sm">
-                  Ambiente acolhedor e técnicas gentis para crianças com medo de dentista
-                </p>
+            </div>
+
+            {/* Floating stats */}
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl border border-[#D5DEEF]/50">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-[#395886] mb-1">95%</div>
+                <div className="text-sm text-gray-600">Crianças superam<br/>o medo na 1ª consulta</div>
               </div>
             </div>
-            {/* Decorative element */}
-            <div className="absolute -top-6 -left-6 w-48 h-48 bg-gradient-to-br from-[#638ECB]/30 to-[#B1C9EF]/30 rounded-3xl -z-10"></div>
           </div>
         </div>
       </div>

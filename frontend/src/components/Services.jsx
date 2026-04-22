@@ -16,11 +16,11 @@ const iconMap = {
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-gradient-to-b from-white to-[#F0F3FA]/30">
+    <section id="services" className="py-24 bg-gradient-to-b from-white via-[#F0F3FA] to-[#D5DEEF]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-[#F0F3FA] text-[#395886] rounded-full px-4 py-2 text-sm font-semibold mb-4">
+          <div className="inline-block bg-gradient-to-r from-[#8AAEE0] to-[#B1C9EF] text-white rounded-full px-4 py-2 text-sm font-semibold mb-4">
             Nossos Serviços
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">

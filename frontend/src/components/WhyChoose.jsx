@@ -3,11 +3,11 @@ import { whyChoose } from '../data/mock';
 
 const WhyChoose = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gradient-to-br from-[#F0F3FA] via-white to-[#D5DEEF]/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-[#F0F3FA] text-[#395886] rounded-full px-4 py-2 text-sm font-semibold mb-4">
+          <div className="inline-block bg-gradient-to-r from-[#B1C9EF] to-[#8AAEE0] text-white rounded-full px-4 py-2 text-sm font-semibold mb-4">
             Diferenciais
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">

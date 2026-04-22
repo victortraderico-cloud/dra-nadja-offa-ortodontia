@@ -86,8 +86,8 @@ const Hero = () => {
           <div className="relative lg:ml-auto">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/egsq4t18_ChatGPT%20Image%2022%20de%20abr.%20de%202026%2C%2012_58_29.png"
-                alt="Dra. Nadja Offa com paciente"
+                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/nbwfxfaj_WhatsApp%20Image%202026-04-14%20at%2010.42.59.jpeg"
+                alt="Dra. Nadja Offa"
                 className="w-full h-[600px] object-cover"
               />
             </div>
