@@ -51,25 +51,18 @@ const ParentSection = () => {
         </div>
 
         {/* Imagem */}
-        <div className="relative mb-12">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
+        <div className="mb-12">
+          <div className="rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
             <img 
               src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/ithxaj94_WhatsApp%20Image%202026-04-23%20at%2009.45.31%20%281%29.jpeg"
               alt="Ortodontia Infantil - Dra. Nadja Offa"
-              className="w-full h-[400px] md:h-[600px] object-cover"
+              className="w-full h-auto object-contain"
             />
-          </div>
-          {/* Floating stats */}
-          <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-2xl p-6 shadow-xl border border-[#D5DEEF]/50">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-[#395886] mb-1">95%</div>
-              <div className="text-sm text-gray-600">Crianças superam o medo na 1ª consulta</div>
-            </div>
           </div>
         </div>
 
         {/* 4 Caixinhas */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 mt-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (

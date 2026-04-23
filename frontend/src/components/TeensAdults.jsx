@@ -51,28 +51,18 @@ const TeensAdults = () => {
         </div>
 
         {/* Imagem */}
-        <div className="relative mb-12">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
+        <div className="mb-12">
+          <div className="rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
             <img 
               src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/n617929r_WhatsApp%20Image%202026-04-23%20at%2014.14.43%20%281%29.jpeg"
               alt="Alinhadores Invisíveis"
-              className="w-full h-[400px] md:h-[600px] object-cover"
+              className="w-full h-auto object-contain"
             />
-          </div>
-          {/* Floating badge */}
-          <div className="absolute -top-6 right-8 bg-white rounded-2xl p-6 shadow-xl border border-[#D5DEEF]/50">
-            <div className="flex items-center gap-3">
-              <Sparkles className="w-8 h-8 text-[#395886]" />
-              <div>
-                <div className="text-sm font-semibold text-gray-900">Tecnologia</div>
-                <div className="text-xs text-gray-600">Moderna</div>
-              </div>
-            </div>
           </div>
         </div>
 
         {/* 4 Caixinhas */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 mt-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return (

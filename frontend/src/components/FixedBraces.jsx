@@ -51,25 +51,18 @@ const FixedBraces = () => {
         </div>
 
         {/* Imagem */}
-        <div className="relative mb-12">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
+        <div className="mb-12">
+          <div className="rounded-3xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
             <img 
               src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/2ubcxjds_ChatGPT%20Image%2022%20de%20abr.%20de%202026%2C%2013_30_42.png"
               alt="Tipos de Aparelhos Fixos"
-              className="w-full h-[400px] md:h-[600px] object-cover"
+              className="w-full h-auto object-contain"
             />
-          </div>
-          {/* Floating badge */}
-          <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-2xl p-6 shadow-xl border border-[#D5DEEF]/50">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-[#395886] mb-1">4</div>
-              <div className="text-sm text-gray-600">Tipos de Aparelhos</div>
-            </div>
           </div>
         </div>
 
         {/* 4 Caixinhas */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 mt-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {types.map((type, index) => {
             const IconComponent = type.icon;
             return (
