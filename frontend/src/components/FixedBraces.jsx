@@ -87,7 +87,7 @@ const FixedBraces = () => {
           </div>
 
           {/* Image Side */}
-          <div className="relative order-first lg:order-last">
+          <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/2ubcxjds_ChatGPT%20Image%2022%20de%20abr.%20de%202026%2C%2013_30_42.png"

@@ -87,10 +87,10 @@ const ParentSection = () => {
           </div>
 
           {/* Image Side */}
-          <div className="relative order-first lg:order-last">
+          <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/xzeoms4s_ChatGPT%20Image%2022%20de%20abr.%20de%202026%2C%2012_58_29.png"
+                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/ithxaj94_WhatsApp%20Image%202026-04-23%20at%2009.45.31%20%281%29.jpeg"
                 alt="Ortodontia Infantil - Dra. Nadja Offa"
                 className="w-full h-[600px] object-cover"
               />

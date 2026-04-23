@@ -38,7 +38,7 @@ const TeensAdults = () => {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1590062033099-a43ac5f82979?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwzfHxpbnZpc2libGUlMjBhbGlnbmVyc3xlbnwwfHx8fDE3NzU3MzY1MzV8MA&ixlib=rb-4.1.0&q=85"
+                src="https://customer-assets.emergentagent.com/job_ortho-premium-sp/artifacts/n617929r_WhatsApp%20Image%202026-04-23%20at%2014.14.43%20%281%29.jpeg"
                 alt="Alinhadores Invisíveis"
                 className="w-full h-[600px] object-cover"
               />
