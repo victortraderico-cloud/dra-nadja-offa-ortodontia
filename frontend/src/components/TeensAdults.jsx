@@ -80,7 +80,7 @@ const TeensAdults = () => {
         {/* CTA Azul */}
         <div className="bg-gradient-to-r from-[#395886] to-[#638ECB] rounded-2xl p-8 text-white max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold mb-4">
-            Agende uma Avaliação Gratuita
+            Agende uma Avaliação
           </h3>
           <p className="mb-6 text-white/90 leading-relaxed">
             Descubra como os alinhadores invisíveis podem transformar seu sorriso. 

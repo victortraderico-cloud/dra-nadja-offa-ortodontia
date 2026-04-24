@@ -41,7 +41,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                onClick={() => setIsBookingOpen(true)}
+                onClick={() => window.open(whatsappLink, '_blank')}
                 size="lg"
                 className="bg-gradient-to-r from-[#395886] to-[#638ECB] hover:from-[#638ECB] hover:to-[#395886] text-white px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 text-lg group"
               >
